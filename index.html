@@ -6,113 +6,93 @@
 <title>Stack Wire — links</title>
 <meta name="description" content="AI tools and developer software, one verdict at a time.">
 <meta name="robots" content="index,follow">
-<!--
-  ABSICHTLICH OHNE PARTNERLINKS.
-
-  Ein geschaeftlich betriebenes Telemedium ist in Deutschland
-  impressumspflichtig (§5 DDG, frueher TMG) — und mit Partnerlinks waere diese
-  Seite geschaeftlich. Ein Impressum verlangt Name und ladungsfaehige
-  Anschrift, was der Anonymitaet des Kanals widerspricht.
-
-  Solange hier nur auf die eigenen Kanaele verwiesen wird, stellt sich die
-  Frage nicht. Die Partnerlinks kommen dazu, sobald die Repliwa UG steht: dann
-  traegt das Impressum die UG mit ihrer Geschaeftsadresse statt einer
-  Privatanschrift.
-
-  Die Links liegen bereit in partner.md. Wer sie hier einsetzt, setzt
-  gleichzeitig ein Impressum — sonst nicht.
-
-  Das ist keine Rechtsberatung. Vor dem Schritt mit Steuerberater oder Anwalt
-  klaeren.
--->
 <style>
   :root {
-    --akzent: #5FD3FF;
-    --grund: #0A0C11;
-    --fenster: #0C1016;
-    --leiste: #171C24;
-    --linie: rgba(255,255,255,.10);
+    --accent: #5FD3FF;
+    --bg: #0A0C11;
+    --window: #0C1016;
+    --bar: #171C24;
+    --line: rgba(255,255,255,.10);
     --text: #E6EAF0;
-    --matt: #7D8794;
+    --muted: #7D8794;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    background: var(--grund); color: var(--text); min-height: 100vh;
+    background: var(--bg); color: var(--text); min-height: 100vh;
     font-family: Menlo, Monaco, "Andale Mono", "Courier New", monospace;
     display: flex; flex-direction: column; align-items: center;
     padding: 56px 16px 64px; gap: 30px; line-height: 1.5;
   }
-  .kopf { width: 100%; max-width: 620px; }
-  .marke { color: var(--akzent); font-size: 14px; letter-spacing: 3px; text-transform: uppercase; }
+  .head { width: 100%; max-width: 620px; }
+  .brand { color: var(--accent); font-size: 14px; letter-spacing: 3px; text-transform: uppercase; }
   h1 { font-size: 30px; font-weight: 700; margin-top: 10px; letter-spacing: -.5px; }
-  .strich { width: 90px; height: 5px; background: var(--akzent); border-radius: 3px; margin: 16px 0 14px; }
-  .unter { color: var(--matt); font-size: 15px; }
+  .rule { width: 90px; height: 5px; background: var(--accent); border-radius: 3px; margin: 16px 0 14px; }
+  .sub { color: var(--muted); font-size: 15px; }
 
-  /* Das Fenster aus den Videos, damit Kanal und Seite zusammengehoeren. */
-  .fenster {
-    width: 100%; max-width: 620px; background: var(--fenster);
-    border: 1px solid var(--linie); border-radius: 14px; overflow: hidden;
+  .window {
+    width: 100%; max-width: 620px; background: var(--window);
+    border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
     box-shadow: 0 24px 70px rgba(0,0,0,.55);
   }
-  .leiste {
-    height: 44px; background: var(--leiste); border-bottom: 1px solid var(--linie);
+  .bar {
+    height: 44px; background: var(--bar); border-bottom: 1px solid var(--line);
     display: flex; align-items: center; padding: 0 16px; gap: 8px;
   }
   .p { width: 11px; height: 11px; border-radius: 50%; }
   .r { background: #FF5F57 } .g { background: #FEBC2E } .gr { background: #28C840 }
   .wt { flex: 1; text-align: center; color: rgba(255,255,255,.42); font-size: 13px; margin-right: 50px; }
-  .inhalt { padding: 22px 20px; display: flex; flex-direction: column; gap: 10px; }
-  .komm { color: var(--matt); font-size: 14px; }
+  .body-in { padding: 22px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .comment { color: var(--muted); font-size: 14px; }
 
-  a.zeile {
+  a.row {
     display: flex; align-items: baseline; gap: 12px; text-decoration: none;
     color: var(--text); padding: 14px 14px; border-radius: 9px;
     border: 1px solid transparent; transition: background .15s, border-color .15s;
   }
-  a.zeile:hover, a.zeile:focus-visible {
+  a.row:hover, a.row:focus-visible {
     background: rgba(95,211,255,.09); border-color: rgba(95,211,255,.38); outline: none;
   }
-  .pfeil { color: var(--akzent); flex: 0 0 auto; }
-  .titel { font-weight: 700; }
-  .was { color: var(--matt); font-size: 13px; display: block; margin-top: 3px; font-weight: 400; }
+  .arrow { color: var(--accent); flex: 0 0 auto; }
+  .label { font-weight: 700; }
+  .desc { color: var(--muted); font-size: 13px; display: block; margin-top: 3px; font-weight: 400; }
 
-  .fuss {
-    width: 100%; max-width: 620px; color: var(--matt); font-size: 12.5px;
-    border-top: 1px solid var(--linie); padding-top: 18px;
+  .foot {
+    width: 100%; max-width: 620px; color: var(--muted); font-size: 12.5px;
+    border-top: 1px solid var(--line); padding-top: 18px;
   }
   @media (max-width: 420px) { h1 { font-size: 24px } body { padding-top: 40px } }
 </style>
 </head>
 <body>
 
-<div class="kopf">
-  <div class="marke">Stack Wire</div>
+<div class="head">
+  <div class="brand">Stack Wire</div>
   <h1>AI tools, one verdict at a time.</h1>
-  <div class="strich"></div>
-  <p class="unter">Short videos on what shipped, what it does, and whether it is worth your time.</p>
+  <div class="rule"></div>
+  <p class="sub">Short videos on what shipped, what it does, and whether it is worth your time.</p>
 </div>
 
-<div class="fenster">
-  <div class="leiste">
+<div class="window">
+  <div class="bar">
     <div class="p r"></div><div class="p g"></div><div class="p gr"></div>
     <div class="wt">stackwire — links</div>
   </div>
-  <div class="inhalt">
-    <div class="komm"># where to watch</div>
-    <a class="zeile" href="https://www.youtube.com/@stackwiretv" rel="me">
-      <span class="pfeil">$</span>
-      <span><span class="titel">YouTube</span>
-        <span class="was">@stackwiretv — new videos several times a week</span></span>
+  <div class="body-in">
+    <div class="comment"># where to watch</div>
+    <a class="row" href="https://www.youtube.com/@stackwiretv" rel="me">
+      <span class="arrow">$</span>
+      <span><span class="label">YouTube</span>
+        <span class="desc">@stackwiretv — new videos several times a week</span></span>
     </a>
-    <a class="zeile" href="https://www.tiktok.com/@stackwiretv" rel="me">
-      <span class="pfeil">$</span>
-      <span><span class="titel">TikTok</span>
-        <span class="was">@stackwiretv — same videos, different feed</span></span>
+    <a class="row" href="https://www.tiktok.com/@stackwiretv" rel="me">
+      <span class="arrow">$</span>
+      <span><span class="label">TikTok</span>
+        <span class="desc">@stackwiretv — same videos, different feed</span></span>
     </a>
   </div>
 </div>
 
-<div class="fuss">
+<div class="foot">
   <p>Every video takes one thing that shipped and adds a first-hand verdict —
   not a rewritten press release. Narration is synthetic and labelled as such
   on every upload.</p>
